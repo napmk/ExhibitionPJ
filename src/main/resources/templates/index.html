@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{https://getbootstrap.com/docs/5.2/assets/css/docs.css}" rel="stylesheet">
+<link th:href="@{/css/layout.css}" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" th:href="@{https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons}" />
+<link rel="stylesheet" th:href="@{https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css}">
+
+<title>Index</title>
+</head>
+  <body>
+  <div id="wrapper">
+	<div th:replace="inc/header::header"></div>
+   	<!-- tab 메뉴-->
+   	<div id="exhiPosterWrap">
+   		<h3>전체공연</h3>
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">뮤지컬</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">콘서트</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">연극</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">클래식/무용</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">아동/가족</button>
+		  </li>
+		</ul>
+		<!-- 예매하기 -->
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+			<div class="container">
+				<ul class="reservationWrap">
+					<li>
+						<div class="card">
+						  <img src="..." class="exhiPoster">
+						
+						</div>
+						<div class="rv_btnset">
+							<ul>
+								<li><button type="button" class="btn btn-outline-secondary"><i class="fa-regular fa-heart"></i>좋아요</button></li>
+								<li><button type="button" class="btn btn-primary">예매하기</button></li>
+							</ul>
+					
+						</div>
+					</li>
+					<li>
+						<div class="card">
+						  <img src="..." class="exhiPoster">
+						
+						</div>
+						<div class="rv_btnset">
+							<ul>
+								<li><button type="button" class="btn btn-outline-secondary"><span></span>좋아요</button></li>
+								<li><button type="button" class="btn btn-primary">예매하기</button></li>
+							</ul>
+					
+						</div>
+					</li>
+					<li>
+						<div class="card">
+						  <img src="..." class="exhiPoster">
+						
+						</div>
+						<div class="rv_btnset">
+							<ul>
+								<li><button type="button" class="btn btn-outline-secondary"><span></span>좋아요</button></li>
+								<li><button type="button" class="btn btn-primary">예매하기</button></li>
+							</ul>
+					
+						</div>
+					</li>
+					<li>
+						<div class="card">
+						  <img src="..." class="exhiPoster">
+						
+						</div>
+						<div class="rv_btnset">
+							<ul>
+								<li><button type="button" class="btn btn-outline-secondary">좋아요</button></li>
+								<li><button type="button" class="btn btn-primary">예매하기</button></li>
+							</ul>
+					
+						</div>
+					</li>
+			
+				</ul>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+		  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+		  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+		  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+		</div>
+	</div>	
+		<!-- //예매하기 -->
+	<!-- //tab -->	
+	
+   	<div id="eventWrap" class="mgt50">
+	   	<h3 class="h3">이벤트</h3>
+	   		<ul>
+	   			<li>
+	   				<div class="eventImg"></div>
+	   				<div class="eventTitle">뮤지컬 〈물랑루즈!〉 아시아 초연 (Moulin Rouge! The Musical)</div>
+	   				<div class="eventDate">2022.12.16 ~ 2023.03.05</div>
+	   			</li>
+	   			<li>
+	   				<div class="eventImg"></div>
+	   				<div class="eventTitle">뮤지컬 〈물랑루즈!〉 아시아 초연 (Moulin Rouge! The Musical)</div>
+	   				<div class="eventDate">2022.12.16 ~ 2023.03.05</div>
+	   			</li>
+	   			<li>
+	   				<div class="eventImg"></div>
+	   				<div class="eventTitle">뮤지컬 〈물랑루즈!〉 아시아 초연 (Moulin Rouge! The Musical)</div>
+	   				<div class="eventDate">2022.12.16 ~ 2023.03.05</div>
+	   			</li>
+	   		
+
+	   		</ul>
+   	</div>
+   	
+   	<div id="goodsWrap" class="mgt50">
+	   	<h3>굿즈판매</h3>
+	   	<div class="goodslist">
+	   		<p class="goodImg"></p>
+	   		<div class="goodsText">굿즈판매입니다</div>
+	   	</div>	
+	   	<div class="goodslist">
+	   		<p class="goodImg"></p>
+	   		<div class="goodsText">굿즈판매입니다</div>
+	   	</div>	
+   	</div>
+   	
+   	<div th:replace="inc/footer::footer"></div>
+  </div> 	
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* reset */
+*,
+*::before,
+*::after {box-sizing: border-box;}
+html, body{ font-size:16px;word-break: keep-all;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+body {-webkit-text-size-adjust:none;} 
+ul, li{list-style:none}
+.mgt50{margin-top:50px}
+#wrapper{width:1440px; margin:0 auto}
+.reservationWrap li{display:flax;}
+
+.container {display: flex;}
+.container ul.reservationWrap{margin:20px 0}
+.container ul.reservationWrap{width:100%}
+.container ul.reservationWrap li{float:left;; margin-right:30px}
+.container ul.reservationWrap li div .exhiPoster{width:220px; height:280px}
+.container ul.reservationWrap li .rv_btnset{width:100%}
+.container ul.reservationWrap li .rv_btnset ul li:nth-child(1){margin-right:10px}
+
+#eventWrap {}
+#eventWrap ul{display:flex}
+#eventWrap ul li{float:left;width: calc((100% - 50px)/3); height:100px; margin-right:50px;margin-bottom:5px}
+#eventWrap ul li .eventImg{background:#eee; width:350px; height:180px}
+#eventWrap ul li .eventTitle{font-size:1.0em}
+#eventWrap ul li .eventDate{font-size:.95em; color:#999}
+#eventWrap ul li:nth-last{margin-right:0px}
+
+#goodsWrap{clear:both;}
+#goodsWrap .goodslist {width:50%; float:left}
+#goodsWrap .goodslist p{width:200px; height:200px;background:#eee;}
+
+
+#footer{clear:both}
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+#wrapper{width:100%}
+#exhiPosterWrap ,#eventWrap, #goodsWrap{width:95%; margin:0 auto}
+}
